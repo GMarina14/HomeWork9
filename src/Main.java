@@ -15,7 +15,7 @@ public class Main
         {
             arr[i] = random.nextInt(100_000) + 100_000;
         }
-        return arr;
+            return arr;
     }
     public static void task1()
     {
