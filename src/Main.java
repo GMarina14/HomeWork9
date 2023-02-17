@@ -15,7 +15,7 @@ public class Main
         {
             arr[i] = random.nextInt(100_000) + 100_000;
         }
-        return arr;
+            return arr;
     }
     public static void task1()
     {
@@ -34,8 +34,8 @@ public class Main
     {
         System.out.println("Task 2");
         int[] arr = generateRandomArray();
-        int minCosts=200_000;
-        int maxCosts=-1;
+        int minCosts=arr[0];
+        int maxCosts=arr[0];
 
         for(int dayCosts: arr)
         {
@@ -58,7 +58,7 @@ public class Main
         {
             averageCosts+=dayCosts;
         }
-        averageCosts/=30;
+        averageCosts/=arr.length;
         System.out.println("Average day costs amounted to "+averageCosts+" rubles");
         System.out.println();
     }
